@@ -281,7 +281,7 @@ class LauncherWindow(QtWidgets.QWidget):
         try:
             if sys.platform.startswith("win"):
                 downloads = [
-                    (BUILD_URL_WIN_PART1, "Part1.zip"),
+                    (BUILD_URL_WIN_PART1, "Build.zip"),
                 ]
             else:
                 downloads = [
