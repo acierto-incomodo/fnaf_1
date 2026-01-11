@@ -15,15 +15,13 @@ from PySide6 import QtCore, QtWidgets, QtGui
 LAUNCHER_VERSION = "1.0.0"
 
 # Windows build is split into two parts
-BUILD_URL_WIN_PART1 = "https://github.com/acierto-incomodo/fnaf_1/releases/latest/download/Part1.zip"
-BUILD_URL_WIN_PART2 = "https://github.com/acierto-incomodo/fnaf_1/releases/latest/download/Part2.zip"
-BUILD_URL_WIN_PART3 = "https://github.com/acierto-incomodo/fnaf_1/releases/latest/download/Part3.zip"
+BUILD_URL_WIN_PART1 = "https://github.com/acierto-incomodo/fnaf_1/releases/latest/download/Build.zip"
 BUILD_URL_LINUX = "https://github.com/acierto-incomodo/fnaf_1/releases/latest/download/Build.zip"
 VERSION_URL = "https://github.com/acierto-incomodo/fnaf_1/releases/latest/download/Version.txt"
 RELEASE_NOTES_URL = "https://github.com/acierto-incomodo/fnaf_1/releases/latest/download/ReleaseNotes.txt"
 
-EXE_NAME_WIN   = "Build/Hollow Knight Silksong.exe"
-EXE_NAME_LINUX = "Build/Hollow Knight Silksong.exe"
+EXE_NAME_WIN   = "Build/FiveNightsatFreddys.exe"
+EXE_NAME_LINUX = "Build/FiveNightsatFreddys.exe"
 
 DOWNLOAD_DIR = Path.cwd() / "downloads"
 GAME_DIR     = Path.cwd() / "game"
@@ -284,8 +282,6 @@ class LauncherWindow(QtWidgets.QWidget):
             if sys.platform.startswith("win"):
                 downloads = [
                     (BUILD_URL_WIN_PART1, "Part1.zip"),
-                    (BUILD_URL_WIN_PART2, "Part2.zip"),
-                    (BUILD_URL_WIN_PART3, "Part3.zip"),
                 ]
             else:
                 downloads = [
